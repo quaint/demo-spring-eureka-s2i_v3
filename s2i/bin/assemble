@@ -6,7 +6,8 @@ echo "---> Installing application source"
 echo $STI_SCRIPTS_PATH
 echo $(ls)
 echo $(pwd)
-cp -Rf /tmp/src/. ./
+#cp -Rf /tmp/src/. ./
+cp -Rf ./run/demo-spring-eureka/ ./
 
 echo "---> Building Spring Boot application from source"
 echo "--> # MVN_ARGS = $MVN_ARGS"
