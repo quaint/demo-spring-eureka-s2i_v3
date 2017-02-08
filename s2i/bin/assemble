@@ -3,10 +3,10 @@
 set -e
 
 echo "---> Installing application source"
-echo $STI_SCRIPTS_PATH
-echo $(ls)
-echo $(ls $STI_SCRIPTS_PATH)
-echo $(pwd)
+#echo $STI_SCRIPTS_PATH
+#echo $(ls)
+#echo $(ls $STI_SCRIPTS_PATH)
+#echo $(pwd)
 #cp -Rf /tmp/src/. ./
 cp -Rf $STI_SCRIPTS_PATH/demo-spring-eureka/ ./
 echo $(ls)
