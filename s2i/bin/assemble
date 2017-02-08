@@ -8,7 +8,8 @@ echo $(ls)
 echo $(ls $STI_SCRIPTS_PATH)
 echo $(pwd)
 #cp -Rf /tmp/src/. ./
-cp -Rf ./run/demo-spring-eureka/ ./
+cp -Rf $STI_SCRIPTS_PATH/demo-spring-eureka/ ./
+echo $(ls)
 
 echo "---> Building Spring Boot application from source"
 echo "--> # MVN_ARGS = $MVN_ARGS"
