@@ -42,4 +42,5 @@ USER 1001
 
 
 RUN $STI_SCRIPTS_PATH/assemble
-CMD $STI_SCRIPTS_PATH/run
+#CMD $STI_SCRIPTS_PATH/run
+CMD java -Xmx64m -Xss1024k -jar /opt/app-root/src/target/eureka-1.0-SNAPSHOT.jar
