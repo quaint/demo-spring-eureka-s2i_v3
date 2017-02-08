@@ -34,8 +34,11 @@ COPY ./run/ $STI_SCRIPTS_PATH
 RUN chown -R 1001:0 /opt/app-root
 USER 1001
 
+RUN chmod +x $STI_SCRIPTS_PATH/run
+
 # Set the default CMD to print the usage of the language image
 #CMD $STI_SCRIPTS_PATH/usage
+
 
 RUN $STI_SCRIPTS_PATH/assemble
 RUN $STI_SCRIPTS_PATH/run
