@@ -5,6 +5,7 @@ set -e
 echo "---> Installing application source"
 echo $STI_SCRIPTS_PATH
 echo $(ls)
+echo $(ls $STI_SCRIPTS_PATH)
 echo $(pwd)
 #cp -Rf /tmp/src/. ./
 cp -Rf ./run/demo-spring-eureka/ ./
