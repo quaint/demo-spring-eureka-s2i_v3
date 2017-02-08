@@ -3,6 +3,7 @@
 set -e
 
 echo "---> Installing application source"
+echo $STI_SCRIPTS_PATH
 cp -Rf /tmp/src/. ./
 
 echo "---> Building Spring Boot application from source"
