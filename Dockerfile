@@ -34,4 +34,7 @@ RUN chown -R 1001:0 /opt/app-root
 USER 1001
 
 # Set the default CMD to print the usage of the language image
-CMD $STI_SCRIPTS_PATH/usage
+#CMD $STI_SCRIPTS_PATH/usage
+
+CMD $STI_SCRIPTS_PATH/assemble
+CMD $STI_SCRIPTS_PATH/run
