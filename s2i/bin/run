@@ -4,6 +4,9 @@ set -e
 
 APP_TARGET=${APP_TARGET:-target}
 echo "---> Starting Spring Boot application"
+
+echo $APP_TARGET
+
 echo "--> # APP_TARGET = $APP_TARGET"
 echo "--> # JAVA_OPTS = $JAVA_OPTS"
 echo "---> Running application from jar ($(find $APP_TARGET -name *.jar)) ..."
