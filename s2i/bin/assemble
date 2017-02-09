@@ -11,6 +11,8 @@ echo "---> before"
 cp -Rf /tmp/src/. ./
 echo "---> after"
 echo $(ls)
+echo $(cat pom.xml)
+
 
 echo "---> Building Spring Boot application from source"
 echo "--> # MVN_ARGS = $MVN_ARGS"
