@@ -37,10 +37,10 @@ USER 1001
 
 
 
-# Set the default CMD to print the usage of the language image
-#CMD $STI_SCRIPTS_PATH/usage
+#Set the default CMD to print the usage of the language image
+CMD $STI_SCRIPTS_PATH/usage
 
 
 RUN $STI_SCRIPTS_PATH/assemble
 #CMD $STI_SCRIPTS_PATH/run
-CMD java -Xmx64m -Xss1024k -jar /opt/app-root/src/target/eureka-1.0-SNAPSHOT.jar
+#CMD java -Xmx64m -Xss1024k -jar /opt/app-root/src/target/eureka-1.0-SNAPSHOT.jar

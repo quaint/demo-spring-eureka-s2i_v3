@@ -4,12 +4,11 @@ set -e
 
 echo "---> Installing application source"
 #echo $STI_SCRIPTS_PATH
-echo $(ls)
+#echo $(ls)
 #echo $(ls $STI_SCRIPTS_PATH)
 #echo $(pwd)
-echo "---> before"
-cp -Rf /tmp/src/. ./
-echo "---> after"
+#cp -Rf /tmp/src/. ./
+cp -Rf $STI_SCRIPTS_PATH/demo-spring-eureka/. ./
 echo $(ls)
 
 echo "---> Building Spring Boot application from source"
