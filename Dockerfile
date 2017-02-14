@@ -9,6 +9,8 @@ EXPOSE 8080
 
 ENV JAVA_VERSON 1.8.0
 ENV MAVEN_VERSION 3.3.9
+ENV HTTP_PROXY 172.31.56.100:8089
+ENV HTTPS_PROXY 172.31.56.100:8089  
 
 LABEL io.k8s.description="Platform for building and running Spring Boot applications" \
       io.k8s.display-name="Spring Boot Maven 3" \
