@@ -9,14 +9,14 @@ EXPOSE 8080
 
 ENV JAVA_VERSON 1.8.0
 ENV MAVEN_VERSION 3.3.9
-ENV HTTP_PROXY 172.31.56.100:8089
-ENV HTTPS_PROXY 172.31.56.100:8089  
 
 LABEL io.k8s.description="Platform for building and running Spring Boot applications" \
       io.k8s.display-name="Spring Boot Maven 3" \
       io.openshift.expose-services="8080:http" \
       io.openshift.tags="builder,java,java8,maven,maven3,springboot"
 
+ENV http_proxy 172.31.56.100:8089
+ENV https_proxy 172.31.56.100:8089
 RUN yum update -y && \
   yum install -y curl && \
   yum install -y java-$JAVA_VERSON-openjdk java-$JAVA_VERSON-openjdk-devel && \
@@ -37,11 +37,8 @@ RUN chown -R 1001:0 /opt/app-root
 RUN chmod +x $STI_SCRIPTS_PATH/run
 USER 1001
 
-
-
 #Set the default CMD to print the usage of the language image
 CMD $STI_SCRIPTS_PATH/usage
-
 
 #RUN $STI_SCRIPTS_PATH/assemble
 #CMD $STI_SCRIPTS_PATH/run
